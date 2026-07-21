@@ -5,8 +5,9 @@ import {
   type DeliverableOutput,
 } from "@/components/deliverables/types";
 
-type Evidence = Record<string, string[]>;
-type Skills = Record<string, string[]>;
+type EvidenceItem = string | { value?: unknown; evidence?: unknown };
+type Evidence = Record<string, EvidenceItem[]>;
+type Skills = Record<string, unknown[]>;
 type HiringDecision = Record<
   string,
   { recommendation?: string; justification?: string }
@@ -25,6 +26,26 @@ function parseJson<T>(value?: string): T | undefined {
 
 function field(rows: string[], name: string) {
   return rows.find((row) => row.toLowerCase().startsWith(name.toLowerCase()));
+}
+
+function readable(value: unknown): string {
+  if (typeof value === "string" || typeof value === "number") {
+    return String(value);
+  }
+
+  if (value && typeof value === "object") {
+    const item = value as { value?: unknown; evidence?: unknown; name?: unknown };
+    const main = item.value ?? item.name;
+    const supportingEvidence = item.evidence;
+    if (main !== undefined && supportingEvidence !== undefined) {
+      return `${readable(main)} — ${readable(supportingEvidence)}`;
+    }
+    if (main !== undefined) return readable(main);
+    if (supportingEvidence !== undefined) return readable(supportingEvidence);
+    return Object.values(item).map(readable).filter(Boolean).join(" · ");
+  }
+
+  return "Not provided";
 }
 
 export function RecruiterOutput({ output }: { output: DeliverableOutput }) {
@@ -64,7 +85,7 @@ export function RecruiterOutput({ output }: { output: DeliverableOutput }) {
                     (item, index) => (
                       <li key={`${candidate}-evidence-${index}`} className="flex gap-2">
                         <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300" />
-                        <span>{item}</span>
+                        <span>{readable(item)}</span>
                       </li>
                     ),
                   )}
@@ -93,7 +114,7 @@ export function RecruiterOutput({ output }: { output: DeliverableOutput }) {
                         key={`${candidate}-skill-${index}`}
                         className="rounded-full bg-violet-400/10 px-2 py-1 text-xs text-violet-100"
                       >
-                        {skill}
+                        {readable(skill)}
                       </span>
                     ))
                   ) : (
