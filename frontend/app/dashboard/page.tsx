@@ -3,7 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
-const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+const API = "/backend";
 const details: Record<string, string> = {
   Recruiter: "Analyze resumes, screen candidates, and deliver hiring reports.",
   Support: "Classify tickets, search knowledge, and resolve customer issues.",
@@ -16,16 +16,29 @@ type Employee = { id: string; name: string; role: string; department: string };
 export default function Dashboard() {
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
   useEffect(() => {
     fetch(`${API}/api/employees`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("access_token")}`,
       },
     })
-      .then((r) => r.json())
-      .then((items: Employee[]) =>
-        setEmployees(items.filter((e) => details[e.role])),
-      )
+      .then(async (response) => {
+        const payload: unknown = await response.json();
+        if (!response.ok || !Array.isArray(payload)) {
+          throw Error("Your employee list could not be loaded. Please sign in again.");
+        }
+        return payload as Employee[];
+      })
+      .then((items) => setEmployees(items.filter((employee) => details[employee.role])))
+      .catch((cause) => {
+        setEmployees([]);
+        setError(
+          cause instanceof Error
+            ? cause.message
+            : "Your employee list could not be loaded.",
+        );
+      })
       .finally(() => setLoading(false));
   }, []);
   return (
@@ -94,9 +107,14 @@ export default function Dashboard() {
                       Hire & manage <ArrowUpRight size={15} />
                     </Link>
                   </div>
-                </motion.article>
-              ))}
+              </motion.article>
+            ))}
         </div>
+        {!loading && error && (
+          <div className="glass mt-6 rounded-2xl border border-rose-300/20 p-5 text-sm text-rose-100">
+            {error}
+          </div>
+        )}
       </section>
     </main>
   );

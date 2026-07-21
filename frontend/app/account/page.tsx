@@ -2,7 +2,7 @@
 import { DashboardNavbar } from "@/components/dashboard-navbar";
 import { AlertTriangle, Camera, KeyRound, UserRound, X } from "lucide-react";
 import { FormEvent, useEffect, useState } from "react";
-const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+const API = "/backend";
 type Profile = {
   full_name: string;
   email: string;

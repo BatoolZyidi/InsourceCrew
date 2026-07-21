@@ -20,7 +20,7 @@ export function ExecutionPanel({
     const timer = setInterval(async () => {
       const token = localStorage.getItem("access_token");
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}/api/runs/${runId}`,
+        `/backend/api/runs/${runId}`,
         { headers: { Authorization: `Bearer ${token}` } },
       );
       if (res.ok) setLogs((await res.json()).logs);

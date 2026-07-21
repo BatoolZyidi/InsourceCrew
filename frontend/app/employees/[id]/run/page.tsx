@@ -9,7 +9,7 @@ import { RecruiterOutput } from "@/components/employees/recruiter-output";
 import { OperationsOutput } from "@/components/employees/operations-output";
 import { SupportOutput } from "@/components/employees/support-output";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8001";
+const API = "/backend";
 type Employee = { name: string; role: string; description: string };
 type Log = {
   id: string;

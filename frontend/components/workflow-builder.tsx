@@ -25,7 +25,7 @@ import {
   RotateCcw,
   Save,
 } from "lucide-react";
-const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+const API = "/backend";
 type Graph = { nodes: Node[]; edges: Edge[] };
 type Draft = { version: number; workflow: Graph };
 type Version = { version: number; status: "draft" | "published" | "archived" };

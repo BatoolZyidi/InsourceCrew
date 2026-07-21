@@ -8,7 +8,7 @@ import { SalesOutput } from "@/components/employees/sales-output";
 import { MarketingOutput } from "@/components/employees/marketing-output";
 import { OperationsOutput } from "@/components/employees/operations-output";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8001";
+const API = "/backend";
 type Run = { id: string; status: string; created_at: string };
 type Log = {
   id?: string;
