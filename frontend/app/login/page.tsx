@@ -47,7 +47,7 @@ export default function Login() {
           className="flex items-center gap-3 text-sm font-semibold"
         >
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-violet-300 to-cyan-200 text-slate-950">
-            I
+            IC
           </span>
           InsourceCrew
         </Link>

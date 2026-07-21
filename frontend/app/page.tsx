@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Check, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, Check, Sparkles } from "lucide-react";
 const crew = [
   ["Recruiter", "Screens and ranks candidates", "R"],
   ["Support", "Resolves customer issues", "S"],
@@ -15,7 +15,7 @@ export default function Landing() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
         <Link href="/" className="flex items-center gap-3 font-semibold">
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-violet-300 to-cyan-200 text-slate-950">
-            I
+            IC
           </span>
           InsourceCrew
         </Link>
@@ -54,9 +54,13 @@ export default function Landing() {
             Give your team intelligent teammates with transparent, editable
             workflows—from recruiting to operations.
           </p>
-          <div className="mt-9 flex gap-3">
+          <div className="mt-9 flex flex-wrap gap-3">
             <Link href="/signup" className="btn-primary px-5 py-3">
               Hire your first employee <ArrowRight size={17} />
+            </Link>
+            <Link href="/guide" className="btn-ghost px-5 py-3">
+              <BookOpen size={17} />
+              View usage guide
             </Link>
           </div>
           <div className="mt-12 flex flex-wrap gap-x-7 gap-y-3 text-sm text-slate-300">

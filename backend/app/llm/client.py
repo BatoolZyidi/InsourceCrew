@@ -45,7 +45,7 @@ class GptOssClient:
         return text, latency
 
     async def complete(
-        self, prompt: str, *, system: str = "", max_tokens: int = 800
+        self, prompt: str, *, system: str = "", max_tokens: int = 4096
     ) -> tuple[str, int]:
         """Shared GPT-OSS boundary for Planner and AI execution nodes."""
         settings = get_settings()

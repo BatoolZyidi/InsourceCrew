@@ -2,6 +2,7 @@
 import Link from "next/link";
 import {
   BarChart3,
+  BookOpen,
   LogOut,
   Menu,
   PlugZap,
@@ -26,7 +27,7 @@ export function DashboardNavbar() {
           className="flex items-center gap-3 font-semibold"
         >
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-violet-300 to-cyan-200 text-slate-950">
-            I
+            IC
           </span>
           InsourceCrew
         </Link>
@@ -80,6 +81,11 @@ export function DashboardNavbar() {
                 href="/analytics"
                 icon={<BarChart3 size={16} />}
                 label="Analytics"
+              />
+              <MenuLink
+                href="/guide"
+                icon={<BookOpen size={16} />}
+                label="Usage guide"
               />
               <div className="my-2 border-t border-white/10" />
               <MenuLink
