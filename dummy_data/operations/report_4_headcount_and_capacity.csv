@@ -1,0 +1,5 @@
+department,headcount,avg_tickets_or_leads_per_person_per_week,capacity_utilization_percent,open_positions
+Support,6,182,105,1
+Sales,4,37,98,0
+Marketing,2,6250,88,1
+Operations,2,N/A,75,0

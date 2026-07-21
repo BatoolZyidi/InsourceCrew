@@ -1,0 +1,19 @@
+{
+  "ticket_id": "SUP-1042",
+  "customer": {
+    "name": "Farhan Iqbal",
+    "email": "farhan.iqbal@example.com",
+    "account_tier": "Growth Plan",
+    "account_age_months": 14,
+    "monthly_spend_usd": 89
+  },
+  "subject": "Question about invoice amount",
+  "message": "Hi, I noticed my invoice this month is a bit higher than usual. Could you help me understand what changed? I upgraded my plan two weeks ago so it might be related to that, just want to confirm.",
+  "channel": "email",
+  "submitted_at": "2026-07-15T09:12:00Z",
+  "conversation_thread": [],
+  "past_tickets": [
+    {"ticket_id": "SUP-0891", "subject": "How to add a team member", "resolved_at": "2026-04-02", "resolution": "Walked through admin panel steps, resolved same day"}
+  ],
+  "product_usage_summary": "Active daily user, 3 team members on account, uses reporting feature weekly"
+}

@@ -1,0 +1,11 @@
+{
+  "request_id": "MKT-204",
+  "business_goal": "Create educational content to help reduce first-90-day churn by showing customers how to get value from underused features.",
+  "target_market": "Customers in their first 90 days who have logged in fewer than 5 times",
+  "current_context": "Support team flagged that customers who don't set up automated workflows in week 1 are 3x more likely to churn.",
+  "constraints": "Content should be usable in onboarding emails and in-app tooltips, not just social media.",
+  "past_campaign_performance": [
+    {"campaign": "Onboarding checklist email (existing)", "channel": "Email, automated day-1 send", "spend_usd": 0, "open_rate_percent": 52, "click_rate_percent": 19, "notes": "Highest-performing automated email, but doesn't mention workflow automation specifically"}
+  ],
+  "current_audience_size": {"email_list": 3200, "linkedin_followers": 1800, "instagram_followers": 950}
+}

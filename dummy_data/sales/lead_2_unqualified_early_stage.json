@@ -1,0 +1,25 @@
+{
+  "lead_id": "LEAD-502",
+  "company": {
+    "name": "BrightDesk Co",
+    "industry": "Freelance design services",
+    "size": "2 employees",
+    "locations": "Remote, single founder-led team",
+    "estimated_revenue": "Under $100K annual",
+    "tech_stack_notes": "No formal tools mentioned, likely uses spreadsheets"
+  },
+  "contact": {
+    "name": "Hamza Tariq",
+    "title": "Founder",
+    "email": "hamza@brightdesk.example",
+    "phone": null
+  },
+  "source": "Newsletter signup",
+  "message": "Just curious what this does, saw an ad on social media. Not actively looking to buy anything right now, just exploring options for the future.",
+  "budget_indicated": "Not specified",
+  "timeline": "No timeline given",
+  "past_interactions": [
+    {"date": "2026-07-16", "type": "newsletter_signup", "notes": "Signed up via footer form after clicking Instagram ad, no further engagement"}
+  ],
+  "bant_notes": "No budget mentioned, single-person company likely too small for current pricing tiers, no clear need stated, no timeline"
+}

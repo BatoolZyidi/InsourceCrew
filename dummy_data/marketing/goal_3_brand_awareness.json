@@ -1,0 +1,11 @@
+{
+  "request_id": "MKT-203",
+  "business_goal": "Build general brand awareness in the local SME community ahead of entering a new city market.",
+  "target_market": "SME owners in Lahore, Punjab, across retail and services sectors",
+  "current_context": "No prior marketing presence in this city. No paid budget approved yet, organic-only campaign for now.",
+  "constraints": "Must be low-cost, organic content only (no paid ads), focus on LinkedIn and local business communities.",
+  "past_campaign_performance": [
+    {"campaign": "Karachi market entry (prior year)", "channel": "LinkedIn organic + local business Facebook groups", "spend_usd": 0, "signups_generated": 38, "notes": "Facebook groups drove more engagement than LinkedIn in that market, worth testing again"}
+  ],
+  "current_audience_size": {"email_list": 3200, "linkedin_followers": 1800, "instagram_followers": 950}
+}

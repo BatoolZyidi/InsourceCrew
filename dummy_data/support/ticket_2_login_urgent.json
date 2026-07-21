@@ -1,0 +1,20 @@
+{
+  "ticket_id": "SUP-1043",
+  "customer": {
+    "name": "Nadia Chaudhry",
+    "email": "nadia.chaudhry@example.com",
+    "account_tier": "Pro Plan",
+    "account_age_months": 6,
+    "monthly_spend_usd": 149
+  },
+  "subject": "Cannot log in - locked out before big presentation",
+  "message": "I've been trying to log in for the last 30 minutes and keep getting 'invalid credentials' even after resetting my password twice. I have a client demo in an hour and need access urgently. This is really frustrating, please help immediately.",
+  "channel": "live_chat",
+  "submitted_at": "2026-07-18T14:03:00Z",
+  "conversation_thread": [
+    {"sender": "customer", "message": "Still locked out, tried the reset link twice", "timestamp": "2026-07-18T14:05:00Z"},
+    {"sender": "customer", "message": "Anyone there? This is time sensitive", "timestamp": "2026-07-18T14:09:00Z"}
+  ],
+  "past_tickets": [],
+  "product_usage_summary": "New account, logged in daily since signup, no prior login issues on record"
+}

@@ -1,0 +1,17 @@
+{
+  "ticket_id": "SUP-1045",
+  "customer": {
+    "name": "Layla Aslam",
+    "email": "layla.aslam@example.com",
+    "account_tier": "Growth Plan",
+    "account_age_months": 3,
+    "monthly_spend_usd": 89
+  },
+  "subject": "Is there a way to export reports as PDF?",
+  "message": "Loving the product so far. Quick question - is there a built-in way to export dashboard reports as PDF? Right now I'm taking screenshots which isn't ideal for sharing with clients.",
+  "channel": "email",
+  "submitted_at": "2026-07-17T16:20:00Z",
+  "conversation_thread": [],
+  "past_tickets": [],
+  "product_usage_summary": "New account, exploring reporting features actively in first month"
+}

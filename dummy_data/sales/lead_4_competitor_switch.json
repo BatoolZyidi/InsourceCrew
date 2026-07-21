@@ -1,0 +1,26 @@
+{
+  "lead_id": "LEAD-504",
+  "company": {
+    "name": "Bright Path Clinics",
+    "industry": "Healthcare (multi-clinic network)",
+    "size": "45 employees",
+    "locations": "4 clinics in Lahore",
+    "estimated_revenue": "$1.8M annual",
+    "tech_stack_notes": "Currently on a competitor's AI agent platform, unhappy with billing surprises"
+  },
+  "contact": {
+    "name": "Dr. Sarah Nadeem",
+    "title": "Practice Administrator",
+    "email": "sarah.nadeem@brightpathclinics.example",
+    "phone": "+92 42 887766"
+  },
+  "source": "Comparison landing page (vs. competitor)",
+  "message": "We're currently using another AI automation tool but our bill has doubled twice in the last 3 months due to usage credits and we can't predict costs anymore. Looking for something with more predictable pricing. Can you send over your pricing structure?",
+  "budget_indicated": "Currently paying ~$400/month, wants predictable pricing at or below that",
+  "timeline": "Actively comparing options now, wants to switch within 4-6 weeks",
+  "past_interactions": [
+    {"date": "2026-07-18", "type": "pricing_page_visit", "notes": "Visited pricing page 3 times in one day, downloaded pricing comparison PDF"},
+    {"date": "2026-07-19", "type": "contact_form", "notes": "Submitted contact form directly asking about flat-rate pricing"}
+  ],
+  "bant_notes": "Clear budget ceiling stated, Dr. Nadeem has purchasing authority as practice admin, strong stated need (pricing predictability), timeline is short and motivated"
+}

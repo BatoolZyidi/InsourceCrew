@@ -1,0 +1,23 @@
+{
+  "resume_id": "RES-107",
+  "applied_job_id": "JD-002",
+  "applied_job_title": "Backend Developer",
+  "candidate": {
+    "name": "Ibrahim Shah",
+    "email": "ibrahim.shah@example.com",
+    "phone": "+92 345 6677889",
+    "location": "Lahore, Pakistan",
+    "linkedin": "linkedin.com/in/ibrahimshah",
+    "portfolio_url": "github.com/ibrahimshah",
+    "years_experience": 5,
+    "education": "BS Computer Science, LUMS (2016-2020)",
+    "expected_salary": "PKR 380,000/month"
+  },
+  "skills": ["Python", "FastAPI", "Django", "PostgreSQL", "Docker", "Kubernetes (basic)", "AWS (EC2, RDS, S3)", "Celery", "Redis"],
+  "certifications": ["AWS Certified Solutions Architect - Associate"],
+  "work_history": [
+    {"company": "Nimbus Cloud Solutions", "title": "Backend Engineer", "duration": "2022-2026", "highlights": "Designed microservices architecture handling 2M+ daily API requests using FastAPI and Celery. Managed production deployments on AWS with Docker and basic Kubernetes."},
+    {"company": "FinEdge Technologies", "title": "Backend Developer", "duration": "2020-2022", "highlights": "Built REST APIs with Django and PostgreSQL for a payments platform, implemented rate limiting and caching with Redis."}
+  ],
+  "resume_text": "Backend Engineer with 5 years of experience across fintech and cloud infrastructure. Strong FastAPI, PostgreSQL, Docker, and AWS background, has led production deployments and designed microservices at scale. Exceeds core requirements, likely to expect senior-level scope and compensation."
+}

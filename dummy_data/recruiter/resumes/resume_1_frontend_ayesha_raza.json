@@ -1,0 +1,23 @@
+{
+  "resume_id": "RES-101",
+  "applied_job_id": "JD-001",
+  "applied_job_title": "Frontend Developer",
+  "candidate": {
+    "name": "Ayesha Raza",
+    "email": "ayesha.raza@example.com",
+    "phone": "+92 300 1234567",
+    "location": "Lahore, Pakistan",
+    "linkedin": "linkedin.com/in/ayesharaza-dev",
+    "portfolio_url": "ayesharaza.dev",
+    "years_experience": 4,
+    "education": "BS Computer Science, University of Punjab (2018-2022)",
+    "expected_salary": "PKR 320,000/month"
+  },
+  "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS", "REST APIs", "GraphQL", "Jest", "Figma handoff"],
+  "certifications": ["Meta Front-End Developer Professional Certificate"],
+  "work_history": [
+    {"company": "PixelWorks", "title": "Frontend Developer", "duration": "2022-2026", "highlights": "Led migration of legacy jQuery app to Next.js, cutting page load time by 40%. Owned the component library used across 3 products."},
+    {"company": "CodeNest", "title": "Junior Developer", "duration": "2021-2022", "highlights": "Built internal admin dashboards using React and Chart.js."}
+  ],
+  "resume_text": "Frontend Developer with 4 years of experience building React and TypeScript applications. Led migration of a legacy jQuery app to Next.js at previous company, reducing page load time by 40%. Comfortable with Tailwind CSS, REST and GraphQL APIs, and Jest testing. Worked in a 6-person agile team shipping biweekly releases."
+}

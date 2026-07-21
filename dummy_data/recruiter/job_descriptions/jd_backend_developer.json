@@ -1,0 +1,20 @@
+{
+  "job_id": "JD-002",
+  "title": "Backend Developer",
+  "department": "Engineering",
+  "location": "Lahore, Punjab (Hybrid)",
+  "employment_type": "Full-time",
+  "requirements": [
+    "3+ years professional Python experience",
+    "Experience with FastAPI or Django",
+    "Strong PostgreSQL and REST API design skills",
+    "Familiarity with Docker",
+    "Understanding of production deployment practices"
+  ],
+  "nice_to_have": [
+    "Celery or other task queue experience",
+    "AWS or other cloud platform experience",
+    "Microservices architecture experience"
+  ],
+  "description": "Acme Technologies is hiring a Backend Developer to work on our core platform APIs. You'll design and maintain services powering our workflow execution engine, work with PostgreSQL at scale, and collaborate with the platform team on reliability and performance."
+}

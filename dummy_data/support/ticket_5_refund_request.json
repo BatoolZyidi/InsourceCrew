@@ -1,0 +1,19 @@
+{
+  "ticket_id": "SUP-1046",
+  "customer": {
+    "name": "Waqas Rehman",
+    "email": "waqas.rehman@example.com",
+    "account_tier": "Pro Plan",
+    "account_age_months": 1,
+    "monthly_spend_usd": 149
+  },
+  "subject": "Requesting refund - not what we expected",
+  "message": "We signed up last month expecting the automation features to cover our support workflow, but it turns out we need integrations that aren't available yet. We'd like to request a refund for this month since we barely used it.",
+  "channel": "email",
+  "submitted_at": "2026-07-19T08:30:00Z",
+  "conversation_thread": [],
+  "past_tickets": [
+    {"ticket_id": "SUP-1038", "subject": "Does this integrate with our ticketing tool?", "resolved_at": "2026-07-05", "resolution": "Confirmed integration not yet available, customer said they'd try anyway"}
+  ],
+  "product_usage_summary": "Low usage since signup, logged in 3 times in first month"
+}

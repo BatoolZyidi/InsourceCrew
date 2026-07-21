@@ -1,0 +1,6 @@
+date,department,incident_type,severity,resolution_time_hours,root_cause
+2026-07-02,Support,Response time SLA breach,Medium,6,Staffing gap during public holiday
+2026-07-08,Sales,CRM sync delay,Low,2,Third-party API rate limiting
+2026-07-11,Support,Escalation backlog,High,18,Two team members out sick, no coverage plan
+2026-07-15,Operations,Report generation failure,Medium,4,Data pipeline timeout on large dataset
+2026-07-18,Support,Response time SLA breach,High,10,Ticket volume spike from billing cycle, understaffed

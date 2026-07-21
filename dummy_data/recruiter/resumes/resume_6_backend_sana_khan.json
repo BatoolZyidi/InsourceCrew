@@ -1,0 +1,22 @@
+{
+  "resume_id": "RES-103",
+  "applied_job_id": "JD-002",
+  "applied_job_title": "Backend Developer",
+  "candidate": {
+    "name": "Sana Khan",
+    "email": "sana.khan@example.com",
+    "phone": "+92 302 3456789",
+    "location": "Lahore, Pakistan",
+    "linkedin": "linkedin.com/in/sanakhan-marketing",
+    "portfolio_url": null,
+    "years_experience": 3,
+    "education": "BBA Marketing, LUMS (2018-2022)",
+    "expected_salary": "PKR 180,000/month"
+  },
+  "skills": ["Social media strategy", "Email marketing", "Basic Python (self-taught)"],
+  "certifications": ["Python Basics - Coursera (2026)"],
+  "work_history": [
+    {"company": "BrandLoft", "title": "Marketing Coordinator", "duration": "2023-2026", "highlights": "Managed social campaigns and newsletters. No professional software engineering role held."}
+  ],
+  "resume_text": "Marketing coordinator with 3 years of experience managing social media campaigns and email newsletters. Recently completed a self-paced online course in Python basics. No professional software development experience. Strong communication and project coordination skills."
+}

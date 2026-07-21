@@ -1,0 +1,20 @@
+{
+  "ticket_id": "SUP-1044",
+  "customer": {
+    "name": "Omar Sheikh",
+    "email": "omar.sheikh@example.com",
+    "account_tier": "Enterprise Plan",
+    "account_age_months": 28,
+    "monthly_spend_usd": 1250
+  },
+  "subject": "Third time reporting the same bug - completely unacceptable",
+  "message": "This is the THIRD time I'm reporting that the export feature crashes with large files. Your last two 'fixes' did nothing. I'm seriously considering canceling our enterprise contract if this isn't resolved this week. I need a real answer, not another generic response.",
+  "channel": "email",
+  "submitted_at": "2026-07-19T11:47:00Z",
+  "conversation_thread": [],
+  "past_tickets": [
+    {"ticket_id": "SUP-0967", "subject": "Export fails on files over 50MB", "resolved_at": "2026-06-02", "resolution": "Marked resolved after backend patch, customer did not confirm fix worked"},
+    {"ticket_id": "SUP-1015", "subject": "Export still crashing", "resolved_at": "2026-06-28", "resolution": "Reopened, second patch deployed, customer did not confirm fix worked"}
+  ],
+  "product_usage_summary": "High-usage enterprise account, exports large datasets weekly for board reporting, 12 team members"
+}

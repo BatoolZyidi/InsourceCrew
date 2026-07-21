@@ -1,0 +1,9 @@
+week_start,department,ticket_volume,avg_response_time_minutes,resolution_rate_percent,escalations,csat_score
+2026-05-25,Support,890,33,90,28,4.4
+2026-06-01,Support,912,35,89,31,4.3
+2026-06-08,Support,945,37,88,35,4.2
+2026-06-15,Support,978,39,87,38,4.1
+2026-06-22,Support,1005,41,86,42,4.0
+2026-06-29,Support,1032,43,85,45,3.9
+2026-07-06,Support,1058,44,85,48,3.8
+2026-07-13,Support,1091,47,83,52,3.7

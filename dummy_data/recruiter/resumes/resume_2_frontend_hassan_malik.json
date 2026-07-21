@@ -1,0 +1,22 @@
+{
+  "resume_id": "RES-104",
+  "applied_job_id": "JD-001",
+  "applied_job_title": "Frontend Developer",
+  "candidate": {
+    "name": "Hassan Malik",
+    "email": "hassan.malik@example.com",
+    "phone": "+92 303 4455667",
+    "location": "Karachi, Pakistan",
+    "linkedin": "linkedin.com/in/hassanmalik",
+    "portfolio_url": null,
+    "years_experience": 1,
+    "education": "BS Information Technology, Karachi University (2021-2025)",
+    "expected_salary": "PKR 150,000/month"
+  },
+  "skills": ["React", "JavaScript", "Bootstrap", "HTML/CSS"],
+  "certifications": [],
+  "work_history": [
+    {"company": "WebNest Studio", "title": "Junior Frontend Developer", "duration": "2025-2026", "highlights": "Built landing pages for small business clients using React and Bootstrap. No TypeScript experience yet."}
+  ],
+  "resume_text": "Recent graduate with 1 year of experience building landing pages and small business websites using React and Bootstrap. Familiar with basic JavaScript and HTML/CSS. Eager to learn TypeScript and modern tooling. No experience with Next.js or automated testing yet."
+}

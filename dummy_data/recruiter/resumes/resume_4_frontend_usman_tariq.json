@@ -1,0 +1,23 @@
+{
+  "resume_id": "RES-106",
+  "applied_job_id": "JD-001",
+  "applied_job_title": "Frontend Developer",
+  "candidate": {
+    "name": "Usman Tariq",
+    "email": "usman.tariq@example.com",
+    "phone": "+92 333 1122334",
+    "location": "Islamabad, Pakistan",
+    "linkedin": "linkedin.com/in/usmantariq",
+    "portfolio_url": "github.com/usmantariq",
+    "years_experience": 3,
+    "education": "BS Computer Science, COMSATS Islamabad (2019-2023)",
+    "expected_salary": "PKR 260,000/month"
+  },
+  "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS", "REST APIs", "Redux", "Jest"],
+  "certifications": [],
+  "work_history": [
+    {"company": "DataForge Systems", "title": "Frontend Developer", "duration": "2023-2026", "highlights": "Built internal analytics dashboards with React, TypeScript, and Recharts. Integrated REST APIs for a 5-person data team."},
+    {"company": "Freelance", "title": "Contract Developer", "duration": "2022-2023", "highlights": "Delivered 4 small business websites using Next.js and Tailwind."}
+  ],
+  "resume_text": "Frontend Developer with 3 years of experience, strong React and TypeScript fundamentals, comfortable with Next.js and Tailwind. Built internal dashboards and freelanced on small business sites. Good match on core requirements, no testing framework experience beyond basic Jest usage."
+}

@@ -1,0 +1,12 @@
+{
+  "request_id": "MKT-202",
+  "business_goal": "Announce the launch of our new mobile app to existing customers and drive first-week downloads.",
+  "target_market": "Existing paying customers (about 3,200 accounts) via email and in-app, plus general audience via social",
+  "current_context": "App launches in 10 days, includes offline mode and push notifications as headline features.",
+  "constraints": "Needs an email sequence (3 emails) plus 5 social posts, launch date is fixed and cannot slip.",
+  "past_campaign_performance": [
+    {"campaign": "Kanban feature launch email", "channel": "Email to existing users", "spend_usd": 0, "open_rate_percent": 38, "click_rate_percent": 11, "notes": "Subject lines with a specific feature name outperformed generic ones"},
+    {"campaign": "Previous app store listing update", "channel": "App Store / Play Store", "spend_usd": 0, "signups_generated": 45, "notes": "Organic only, no promotion behind it"}
+  ],
+  "current_audience_size": {"email_list": 3200, "linkedin_followers": 1800, "instagram_followers": 950}
+}

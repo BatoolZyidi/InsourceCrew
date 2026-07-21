@@ -1,0 +1,22 @@
+{
+  "resume_id": "RES-102",
+  "applied_job_id": "JD-002",
+  "applied_job_title": "Backend Developer",
+  "candidate": {
+    "name": "Bilal Ahmed",
+    "email": "bilal.ahmed@example.com",
+    "phone": "+92 301 2345678",
+    "location": "Lahore, Pakistan",
+    "linkedin": "linkedin.com/in/bilalahmed",
+    "portfolio_url": "github.com/bilalahmed",
+    "years_experience": 2,
+    "education": "BS Software Engineering, FAST NUCES (2020-2024)",
+    "expected_salary": "PKR 200,000/month"
+  },
+  "skills": ["Python", "Django", "PostgreSQL", "Docker (local only)", "Git", "Basic CI/CD"],
+  "certifications": [],
+  "work_history": [
+    {"company": "ShopLoop", "title": "Junior Backend Developer", "duration": "2024-2026", "highlights": "Built and maintained REST APIs for internal order management tooling. Wrote raw SQL queries against PostgreSQL for reporting."}
+  ],
+  "resume_text": "Backend Developer with 2 years of experience using Django and PostgreSQL for internal tooling. Built and maintained REST APIs for a small e-commerce platform. Some exposure to Docker for local development, no production deployment experience. Comfortable with Git and basic CI pipelines."
+}

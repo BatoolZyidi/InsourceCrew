@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.venv/
+.venv-local/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.next/
+dist/
+coverage/
+*.log
+*.tsbuildinfo
+uploads/
+.agents/
+.codex/

@@ -1,0 +1,23 @@
+{
+  "resume_id": "RES-108",
+  "applied_job_id": "JD-002",
+  "applied_job_title": "Backend Developer",
+  "candidate": {
+    "name": "Maryam Qureshi",
+    "email": "maryam.qureshi@example.com",
+    "phone": "+92 312 5566778",
+    "location": "Islamabad, Pakistan",
+    "linkedin": "linkedin.com/in/maryamqureshi",
+    "portfolio_url": "github.com/maryamq",
+    "years_experience": 3,
+    "education": "BS Computer Science, NUST (2019-2023)",
+    "expected_salary": "PKR 240,000/month"
+  },
+  "skills": ["Python", "FastAPI", "PostgreSQL", "Docker", "REST API design", "Pytest", "Basic Celery"],
+  "certifications": [],
+  "work_history": [
+    {"company": "Clearwater Logistics", "title": "Backend Developer", "duration": "2023-2026", "highlights": "Built FastAPI services for dispatch scheduling, wrote automated tests with Pytest, containerized services with Docker for staging deployment."},
+    {"company": "NUST Research Lab", "title": "Research Assistant", "duration": "2022-2023", "highlights": "Built data pipelines in Python for academic research projects."}
+  ],
+  "resume_text": "Backend Developer with 3 years of experience building FastAPI services and working with PostgreSQL in production. Comfortable with Docker, REST API design, and automated testing with Pytest. Strong match on core requirements, some exposure to Celery but no AWS experience yet."
+}

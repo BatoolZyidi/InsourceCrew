@@ -1,0 +1,23 @@
+{
+  "resume_id": "RES-105",
+  "applied_job_id": "JD-001",
+  "applied_job_title": "Frontend Developer",
+  "candidate": {
+    "name": "Zara Farooq",
+    "email": "zara.farooq@example.com",
+    "phone": "+92 321 9988776",
+    "location": "Lahore, Pakistan",
+    "linkedin": "linkedin.com/in/zarafarooq",
+    "portfolio_url": "zarafarooq.design",
+    "years_experience": 6,
+    "education": "BS Software Engineering, GIKI (2016-2020)",
+    "expected_salary": "PKR 420,000/month"
+  },
+  "skills": ["React", "TypeScript", "Next.js", "Vue (legacy projects)", "Tailwind CSS", "Storybook", "Jest", "Playwright", "Design systems"],
+  "certifications": ["AWS Certified Cloud Practitioner"],
+  "work_history": [
+    {"company": "FinEdge Technologies", "title": "Senior Frontend Engineer", "duration": "2023-2026", "highlights": "Built and maintained a shared design system used by 4 product teams. Introduced Playwright E2E testing, reducing production UI bugs by 30%."},
+    {"company": "RetailLoop", "title": "Frontend Developer", "duration": "2020-2023", "highlights": "Migrated Vue 2 storefront to React/Next.js. Owned checkout flow performance, improving conversion by 8%."}
+  ],
+  "resume_text": "Senior Frontend Engineer with 6 years of experience across fintech and e-commerce. Deep React/TypeScript/Next.js expertise, strong track record owning design systems and testing infrastructure. Slightly overqualified for a standard Frontend Developer role and expects senior-level compensation."
+}

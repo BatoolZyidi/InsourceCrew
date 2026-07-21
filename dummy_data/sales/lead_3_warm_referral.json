@@ -1,0 +1,26 @@
+{
+  "lead_id": "LEAD-503",
+  "company": {
+    "name": "Clearwater Logistics",
+    "industry": "Logistics",
+    "size": "80 employees",
+    "locations": "3 warehouses, Lahore and Faisalabad",
+    "estimated_revenue": "$3.5M annual",
+    "tech_stack_notes": "Uses a custom dispatch tool built in-house, manual scheduling spreadsheets"
+  },
+  "contact": {
+    "name": "Ahmed Raza",
+    "title": "Operations Manager",
+    "email": "ahmed.raza@clearwaterlog.example",
+    "phone": "+92 41 445566"
+  },
+  "source": "Referral from existing customer (Acme Freight, account since 2024)",
+  "message": "One of your current customers, Acme Freight, recommended we talk to you. We currently do dispatch scheduling manually and it's becoming a bottleneck. Interested in a demo but no formal budget approved yet.",
+  "budget_indicated": "Estimated $8,000/year, pending approval",
+  "timeline": "Exploring over next 1-2 months",
+  "past_interactions": [
+    {"date": "2026-07-12", "type": "referral_intro_email", "notes": "Introduced via Acme Freight's account manager, warm intro email sent"},
+    {"date": "2026-07-13", "type": "reply", "notes": "Ahmed replied same day expressing interest, asked for pricing info"}
+  ],
+  "bant_notes": "Budget not yet approved but estimated and referral-backed, Ahmed has operational authority but likely needs sign-off, clear stated need, timeline is loose"
+}

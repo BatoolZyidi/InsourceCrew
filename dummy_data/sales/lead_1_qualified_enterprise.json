@@ -1,0 +1,26 @@
+{
+  "lead_id": "LEAD-501",
+  "company": {
+    "name": "Horizon Retail Group",
+    "industry": "Retail",
+    "size": "250 employees",
+    "locations": "12 store locations across Punjab and Sindh",
+    "estimated_revenue": "$8M annual",
+    "tech_stack_notes": "Uses Zendesk for support, Google Sheets for reporting, no existing automation platform"
+  },
+  "contact": {
+    "name": "Mariam Yousuf",
+    "title": "VP of Operations",
+    "email": "mariam.yousuf@horizonretail.example",
+    "phone": "+92 42 111222333"
+  },
+  "source": "Website demo request",
+  "message": "We're evaluating tools to automate our customer support and reporting workflows across 12 store locations. Budget is approved for Q3, looking to decide within 3 weeks. Would like a call this week if possible.",
+  "budget_indicated": "$15,000/year",
+  "timeline": "Decision within 3 weeks",
+  "past_interactions": [
+    {"date": "2026-07-10", "type": "webinar_attendance", "notes": "Attended 'Automating retail operations' webinar, asked question about multi-location reporting"},
+    {"date": "2026-07-14", "type": "demo_request_form", "notes": "Submitted form same week as webinar"}
+  ],
+  "bant_notes": "Budget confirmed, Mariam has approval authority as VP Ops, clear need (manual reporting across 12 locations), timeline is tight (3 weeks)"
+}

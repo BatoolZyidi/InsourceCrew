@@ -1,0 +1,20 @@
+{
+  "job_id": "JD-001",
+  "title": "Frontend Developer",
+  "department": "Engineering",
+  "location": "Lahore, Punjab (Hybrid)",
+  "employment_type": "Full-time",
+  "requirements": [
+    "3+ years professional React experience",
+    "Strong TypeScript skills",
+    "Experience integrating REST APIs",
+    "Proficient in CSS/Tailwind",
+    "Comfortable working in an agile team"
+  ],
+  "nice_to_have": [
+    "Next.js experience",
+    "Testing experience (Jest, React Testing Library)",
+    "Design system / component library experience"
+  ],
+  "description": "Acme Technologies is looking for a Frontend Developer to join our product engineering team. You'll build and maintain customer-facing features in our Next.js application, collaborate closely with design and backend teams, and help improve our component library."
+}

@@ -1,0 +1,12 @@
+{
+  "request_id": "MKT-201",
+  "business_goal": "Increase free trial signups by 20% over the next 30 days for our project management product.",
+  "target_market": "Small business owners and team leads, 5-50 person companies",
+  "current_context": "We just launched a Kanban board feature and have a $2,000 promotional budget for social ads.",
+  "constraints": "Must stay consistent with existing brand voice: friendly, direct, no corporate jargon.",
+  "past_campaign_performance": [
+    {"campaign": "Q1 'Get Organized' push", "channel": "Instagram + LinkedIn ads", "spend_usd": 1500, "signups_generated": 210, "cost_per_signup_usd": 7.14, "notes": "LinkedIn outperformed Instagram 3:1 for this audience"},
+    {"campaign": "Referral incentive email", "channel": "Email to existing users", "spend_usd": 0, "signups_generated": 84, "cost_per_signup_usd": 0, "notes": "Highest ROI channel to date, underused so far"}
+  ],
+  "current_audience_size": {"email_list": 3200, "linkedin_followers": 1800, "instagram_followers": 950}
+}
