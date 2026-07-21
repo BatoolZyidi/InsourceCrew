@@ -27,7 +27,7 @@ The five built-in AI employees are Recruiter, Support, Sales, Marketing, and Ope
 | --- | --- |
 | Frontend | Next.js 15, TypeScript, Tailwind CSS, Framer Motion, React Flow |
 | Backend | FastAPI, SQLAlchemy 2, Alembic, Pydantic |
-| Database | PostgreSQL |
+| Database | PostgreSQL locally or Supabase PostgreSQL for deployment |
 | Authentication | JWT access/refresh tokens, bcrypt hashing, auth rate limits |
 | LLM runtime | Fireworks AI GPT-OSS (`accounts/fireworks/models/gpt-oss-120b`) |
 
@@ -35,6 +35,7 @@ The five built-in AI employees are Recruiter, Support, Sales, Marketing, and Ope
 
 ```text
 frontend/                         Next.js application
+  app/guide/                       In-app usage guide
   app/employees/[id]/run/          Live employee test screen
   components/employees/            One output renderer per AI employee
   components/session-history.tsx   Shared saved-run history
@@ -58,6 +59,9 @@ artifacts/                         Build-week implementation evidence
 - Python 3.11+
 - PostgreSQL 15+ running locally
 - Fireworks API key with access to GPT-OSS
+
+For a Render deployment, use Supabase PostgreSQL instead of a local database.
+See the [Supabase deployment guide](docs/supabase.md).
 
 ## Installation
 
@@ -90,6 +94,14 @@ LLM_BASE_URL=https://api.fireworks.ai/inference/v1
 ```
 
 Never commit `.env` or an API key. If a key is exposed, rotate it in Fireworks immediately.
+
+### Supabase and Render option
+
+InsourceCrew runs on Supabase without changing the SQLAlchemy models or
+repositories because Supabase is managed PostgreSQL. For Render, set
+`DATABASE_URL` to the Supabase **Session Pooler** connection string and set
+`CORS_ORIGINS` to the deployed frontend URL. Follow the complete
+[Supabase guide](docs/supabase.md) before deploying.
 
 ### 3. Create the backend virtual environment
 
@@ -144,13 +156,19 @@ npm run dev
 
 Open `http://127.0.0.1:3000`.
 
+The product includes an in-app guide at `http://127.0.0.1:3000/guide`.
+
 ## Usage guide
 
 ### Start a workspace
 
 1. Open the app and select **Create workspace**.
 2. Register your organization, name, email, and password.
-3. After login, choose one of the five AI employees from **Employees to hire**.
+3. After login, you arrive at **My Crew**. Use the header menu to open
+   **Employees to hire** and choose one of the five built-in employees.
+
+For the seeded Acme demo workspace, sign in with
+`maya.chen@acme.com` and `AcmeDemo!2026`.
 
 ### Configure an employee
 
@@ -159,6 +177,7 @@ Open `http://127.0.0.1:3000`.
 3. Edit nodes/configuration as needed.
 4. Save the Draft.
 5. Publish it when ready. Publishing archives the previous Published version and creates a new Draft copy.
+6. Only **Published** employees appear in **My Crew** and can be run.
 
 ### Run an employee with local sample data
 
@@ -212,6 +231,7 @@ GET  /api/health/llm
 - [Workflow JSON schema](docs/workflow-json.md)
 - [Node Registry](docs/node-registry.md)
 - [Final verification evidence](artifacts/final-verification.md)
+- [Supabase and Render guide](docs/supabase.md)
 
 The Planner only generates and validates Draft workflows. The Execution Engine only runs Published workflows in topological order. It never asks the Planner what to execute next.
 
@@ -230,11 +250,11 @@ GPT-5.6/Codex is the development collaborator. GPT-OSS via Fireworks is the runt
 
 ## Build Week submission checklist
 
-- [ ] Rotate any exposed Fireworks key and update `backend/.env`.
+- [ ] Rotate any exposed Fireworks or Supabase secret keys and update `backend/.env`.
 - [ ] Run the complete browser demo once after starting both services.
 - [ ] Record a public video under three minutes showing the product working.
 - [ ] Explain in the video how Codex and GPT-5.6 accelerated the build.
-- [ ] Push this project to a public repository, or share a private repository with `testing@devpost.com` and `build-week-event@openai.com`.
+- [x] Push the project to GitHub.
 - [ ] Include the Codex `/feedback` session ID requested by the Devpost form.
 
 ## Troubleshooting
