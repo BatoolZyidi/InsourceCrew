@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -21,4 +23,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(api_router)
-app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+
+# Render and other clean deployments do not include ignored local upload folders.
+# Create the directory before mounting it so account/profile uploads work at boot.
+UPLOAD_DIR = Path(__file__).resolve().parents[1] / "uploads"
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+app.mount("/uploads", StaticFiles(directory=str(UPLOAD_DIR)), name="uploads")
