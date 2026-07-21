@@ -24,3 +24,9 @@ export const displayValue = (value: unknown): string => {
   }
   return "Not provided";
 };
+
+export const cleanLabel = (value?: string): string =>
+  (value || "")
+    .replace(/^[^:]+:\s*/, "")
+    .replace(/\\n/g, "\n")
+    .trim();

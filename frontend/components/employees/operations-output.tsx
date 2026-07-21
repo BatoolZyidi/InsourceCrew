@@ -2,6 +2,8 @@ import { DeliverableCard } from "@/components/deliverables/shared";
 import {
   highlights,
   text,
+  cleanLabel,
+  displayValue,
   type DeliverableOutput,
 } from "@/components/deliverables/types";
 const parse = (value?: string) => {
@@ -30,17 +32,17 @@ export function OperationsOutput({ output }: { output: DeliverableOutput }) {
     <div className="mt-5">
       <h3 className="text-xl font-semibold">Operations executive report</h3>
       <DeliverableCard title="KPI summary">
-        {get("KPI summary") || summary}
+        {cleanLabel(get("KPI summary")) || summary}
       </DeliverableCard>
       <DeliverableCard title="Bottleneck analysis">
-        {get("Bottleneck analysis") || summary}
+        {cleanLabel(get("Bottleneck analysis")) || summary}
       </DeliverableCard>
       <DeliverableCard title="Prioritized improvements">
         {plan?.length ? (
           <div className="space-y-2">
             {plan.map((item, i) => (
               <div key={i} className="rounded-lg bg-white/[.04] p-3">
-                <p>{item.action || item.description}</p>
+                <p>{displayValue(item.action || item.description)}</p>
                 <p className="mt-1 text-xs text-cyan-200">
                   {item.owner || "Owner pending"} ·{" "}
                   {item.due_date || "Due date pending"}
@@ -49,12 +51,12 @@ export function OperationsOutput({ output }: { output: DeliverableOutput }) {
             ))}
           </div>
         ) : (
-          get("Prioritized improvements") ||
+          cleanLabel(get("Prioritized improvements")) ||
           "No prioritized improvements were returned."
         )}
       </DeliverableCard>
       <DeliverableCard title="Executive report">
-        {get("Executive report") || summary}
+        {cleanLabel(get("Executive report")) || summary}
       </DeliverableCard>
     </div>
   );
