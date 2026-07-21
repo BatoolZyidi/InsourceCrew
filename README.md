@@ -248,15 +248,6 @@ InsourceCrew was built iteratively with Codex using GPT-5.6 during OpenAI Build 
 
 GPT-5.6/Codex is the development collaborator. GPT-OSS via Fireworks is the runtime model used by the AI employees. This separation is intentional: the product can swap its runtime LLM provider through a single `LLM_PROVIDER` configuration boundary.
 
-## Build Week submission checklist
-
-- [ ] Rotate any exposed Fireworks or Supabase secret keys and update `backend/.env`.
-- [ ] Run the complete browser demo once after starting both services.
-- [ ] Record a public video under three minutes showing the product working.
-- [ ] Explain in the video how Codex and GPT-5.6 accelerated the build.
-- [x] Push the project to GitHub.
-- [ ] Include the Codex `/feedback` session ID requested by the Devpost form.
-
 ## Troubleshooting
 
 - **Failed to fetch:** confirm backend health on port `8001` and `NEXT_PUBLIC_API_URL=http://127.0.0.1:8001`; restart the frontend after changing `.env.local`.
