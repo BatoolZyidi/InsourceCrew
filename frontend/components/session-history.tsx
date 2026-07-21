@@ -39,7 +39,7 @@ const stepLabels: Record<string, string> = {
   "output.pdf": "Generate the report",
   "output.dashboard": "Save the final deliverable",
 };
-const labelFor = (nodeType: string) => nodeType;
+const labelFor = (nodeType: string) => stepLabels[nodeType] ?? nodeType;
 
 export function SessionHistory({
   employeeId,
