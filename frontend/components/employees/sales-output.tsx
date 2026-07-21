@@ -2,6 +2,7 @@ import { DeliverableCard } from "@/components/deliverables/shared";
 import {
   highlights,
   text,
+  displayValue,
   type DeliverableOutput,
 } from "@/components/deliverables/types";
 const parse = (value?: string) => {
@@ -18,9 +19,9 @@ export function SalesOutput({ output }: { output: DeliverableOutput }) {
   const get = (key: string) =>
     rows.find((x) => x.toLowerCase().startsWith(key.toLowerCase()));
   const bant = parse(get("BANT assessment")) as
-    Record<string, string> | undefined;
+    Record<string, unknown> | undefined;
   const follow = parse(get("Follow-up plan")) as
-    { step?: number; action?: string; delay_days?: number }[] | undefined;
+    { step?: number; action?: unknown; delay_days?: number }[] | undefined;
   return (
     <div className="mt-5">
       <h3 className="text-xl font-semibold">Lead qualification report</h3>
@@ -33,7 +34,7 @@ export function SalesOutput({ output }: { output: DeliverableOutput }) {
             {Object.entries(bant).map(([key, value]) => (
               <div key={key} className="rounded-lg bg-white/[.04] p-3">
                 <b className="capitalize text-cyan-200">{key}</b>
-                <p>{value}</p>
+                <p>{displayValue(value)}</p>
               </div>
             ))}
           </div>
@@ -50,7 +51,7 @@ export function SalesOutput({ output }: { output: DeliverableOutput }) {
             {follow.map((item, i) => (
               <li key={i} className="rounded-lg bg-white/[.04] p-3">
                 <b>Day {item.delay_days || 0}</b>
-                <p>{item.action}</p>
+                <p>{displayValue(item.action)}</p>
               </li>
             ))}
           </ol>
